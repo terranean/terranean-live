@@ -1,7 +1,11 @@
+const svgSprite = require("eleventy-plugin-svg-sprite");
+
 module.exports = function(eleventyConfig){
     // use addPassthroughCopy to duplicate a file or folder into _Site (css, js, images, fonts, etc.)
     // eleventyConfig.addPassthroughCopy("src/assets/css/style.css");
-     eleventyConfig.addPassthroughCopy("src/assets/images");
+    //  eleventyConfig.addPassthroughCopy("src/assets/images");
+
+    // https://www.npmjs.com/package/eleventy-plugin-svg-sprite
 
 
     return {
@@ -12,5 +16,6 @@ module.exports = function(eleventyConfig){
         layouts: "_layouts"
       }
     };
+
   }
   

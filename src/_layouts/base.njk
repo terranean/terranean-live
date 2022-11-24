@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {# <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> #}
      <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora&display=swap" rel="stylesheet">
     <title>{{ site.title }}{% if title %} - {{ title }} {% endif %} </title>
     <meta name="description" content="
       {% if description %}
@@ -16,9 +19,9 @@
     "/>
 
   </head>
-  <body>
-  {% include "partials/_navigation.njk" %}
-    <main class="border bg-blue-50">
+  <body class="px-6 max-w-7xl m-auto font-sans text-lg">
+  {% include "partials/_header.njk" %}
+    <main>
         {{ content | safe }}
     </main>
   </body>

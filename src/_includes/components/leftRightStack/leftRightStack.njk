@@ -1,0 +1,32 @@
+{# params: heading, subheading, cop, svg #}
+{% set svgPath = '../../../assets/svg/' %}
+{# mobile #}
+<section class="md:hidden py-12">
+    {% if params.hTag and params.heading %}
+    <{{ params.hTag }} class="font-serif text-4xl mb-9">
+        {{ params.heading }}
+    </{{ params.hTag }}>
+    {% endif %}
+
+    {% if params.svg %}
+    <div class="mb-6">
+        {% include svgPath + params.svg + '.svg'%}
+    </div>
+    {% endif %}
+
+    {% if params.subheading %}
+    <span class="italic">
+        {{ params.subheading }}
+    </span>
+    {% endif %}
+
+    {% if params.copy %}
+    <p>
+        {{ params.copy }}
+    </p>
+    {% endif %}
+</section>
+{# desktop #}
+<section class="hidden md:grid">
+desktop
+</section>
