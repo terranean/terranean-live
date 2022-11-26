@@ -3,13 +3,13 @@
 {# mobile #}
 <section class="md:hidden py-12">
     {% if params.hTag and params.heading %}
-    <{{ params.hTag }} class="font-serif text-4xl mb-9">
+    <{{ params.hTag }} class="font-serif text-4xl mb-6">
         {{ params.heading }}
     </{{ params.hTag }}>
     {% endif %}
 
     {% if params.svg %}
-    <div class="mb-6">
+    <div class="mb-6 w-[200px]">
         {% include svgPath + params.svg + '.svg'%}
     </div>
     {% endif %}
