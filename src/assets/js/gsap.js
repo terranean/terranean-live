@@ -16,7 +16,7 @@ svgs.forEach((svg) => {
         count += 1;
         delayTotalStart = delayBase * count;
         delayTotalRepeat = delayBase * elements.length;
-        console.log(delayTotalRepeat);
+        console.log(count);
         if ( count !== elements.length ) {
             gsap.to(element, {
                 delay: delayTotalStart,
@@ -26,20 +26,29 @@ svgs.forEach((svg) => {
                 repeatDelay: delayTotalRepeat,
                 yoyo: true,
                 scrollTrigger: {
-                    trigger: svg
+                    trigger: svg,
+                    start: 'top center',
+                    toggleActions: 'play none none none',
+                    once: true,
                 }
             });
         } else {
             gsap.to(element, {
                 opacity: 1,
                 duration: duration,
-                delay: delayTotalStart
+                delay: delayTotalStart,
+                scrollTrigger: {
+                    trigger: svg,
+                    start: 'top center',
+                    toggleActions: 'play none none none',
+                    once: true,
+                }
             });
+            count = 0;
         }
     });
 
 })
-
 
 
 // // get all svgs
