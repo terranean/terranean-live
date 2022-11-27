@@ -1,7 +1,7 @@
 console.log('gsap');
 
-const duration = .25;
-const delayBase = .15;
+const duration = .15;
+const delayBase = .1;
 
 let children;
 let count = 0;
@@ -23,7 +23,7 @@ svgs.forEach((svg) => {
                 opacity: 1,
                 duration: duration,
                 repeat: 1,
-                repeatDelay: delayTotalRepeat,
+                repeatDelay: delayTotalRepeat + .75,
                 yoyo: true,
                 scrollTrigger: {
                     trigger: svg,
@@ -49,45 +49,3 @@ svgs.forEach((svg) => {
     });
 
 })
-
-
-// // get all svgs
-// const svgs = gsap.utils.toArray('.animate-svg');
-// // for each svg
-// svgs.forEach((svg) => {
-//     gsap.from(svg, {
-//         scrollTrigger: {
-//             markers: true,
-//             // 'trigger scroller(viewport)'
-//             start: `top center`,
-//             // end: 'bottom top',
-//             trigger: svg,
-//             // toggleClass: 'animated',
-//             toggleClass: {
-//                 targets: '.animate-me',
-//                 className: 'opacity-1'
-//             },
-//             // toggleActions: 'play none none none',
-//             once: true,
-//             // onEnter: delayedFadeOut(svg)
-//             onEnter: animate(svg)
-//         }
-//     });
-// });
-
-// get svgs
-// get .animate-me elements inside svg
-// 
-
-
-
-// function delayedFadeOut(element) {
-
-//     console.log(delayedFadeOut);
-//     function unanimate(element) {
-//         element.classList.add('unanimated');
-//     };
-//     setTimeout(function() {
-//         unanimate(element);
-//     }, 10000)
-// }
