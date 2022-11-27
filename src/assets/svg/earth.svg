@@ -7,5 +7,5 @@
     <circle class="animate-me opacity-0" cx="108" cy="108" r="107.5" stroke="#C6FFC5"/>
     <circle class="animate-me opacity-0" cx="120" cy="120" r="119.5" stroke="#C6FFC5"/>
     <circle class="animate-me opacity-0" cx="132" cy="132" r="131.5" stroke="#C6FFC5"/>
-    <circle class="animate-me opacity-0" cx="144" cy="144" r="143.5" stroke="#C6FFC5"/>
+    <circle class="animate-me no-repeat opacity-0" cx="144" cy="144" r="143.5" stroke="#C6FFC5"/>
 </svg>

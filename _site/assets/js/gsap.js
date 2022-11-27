@@ -1,7 +1,7 @@
 console.log('gsap');
 
 const duration = .15;
-const delayBase = .1;
+const delayBase = .125;
 
 let children;
 let count = 0;
@@ -16,15 +16,13 @@ svgs.forEach((svg) => {
         count += 1;
         delayTotalStart = delayBase * count;
         delayTotalRepeat = delayBase * elements.length;
-        console.log(count);
-        if ( count !== elements.length ) {
+        // console.log(count);
+
+        if ( ([...element.classList].includes('no-repeat')) ) {
             gsap.to(element, {
-                delay: delayTotalStart,
                 opacity: 1,
                 duration: duration,
-                repeat: 1,
-                repeatDelay: delayTotalRepeat + .75,
-                yoyo: true,
+                delay: delayTotalStart,
                 scrollTrigger: {
                     trigger: svg,
                     start: 'top center',
@@ -34,9 +32,12 @@ svgs.forEach((svg) => {
             });
         } else {
             gsap.to(element, {
+                delay: delayTotalStart,
                 opacity: 1,
                 duration: duration,
-                delay: delayTotalStart,
+                repeat: 1,
+                repeatDelay: delayTotalRepeat,
+                yoyo: true,
                 scrollTrigger: {
                     trigger: svg,
                     start: 'top center',
@@ -44,6 +45,8 @@ svgs.forEach((svg) => {
                     once: true,
                 }
             });
+        }
+        if ( count == elements.length ) {
             count = 0;
         }
     });
