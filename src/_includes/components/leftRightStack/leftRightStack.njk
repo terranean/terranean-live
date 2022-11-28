@@ -1,5 +1,6 @@
-{# params: heading, subheading, cop, svg #}
+{# params: heading, subheading, copy, svg #}
 {% set svgPath = '../../../assets/svg/' %}
+{# {% {{ set order = 'order-first' if params.orientation == 'copy-left' }} %} #}
 {# mobile #}
 <section class="md:hidden py-12">
     {% if params.hTag and params.heading %}
@@ -15,7 +16,7 @@
     {% endif %}
 
     {% if params.subheading %}
-    <span class="italic">
+    <span class="block mb-6 italic">
         {{ params.subheading }}
     </span>
     {% endif %}
@@ -27,6 +28,32 @@
     {% endif %}
 </section>
 {# desktop #}
-<section class="hidden md:grid">
-desktop
+{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% endif %}
+<section class="hidden md:grid grid-cols-12 gap-6 py-48 {{ order }}">
+    <div class="col-span-6 flex flex-col justify-center">
+    {% if params.svg %}
+    <div class="w-full flex flex-row justify-center">
+        {% include svgPath + params.svg + '.svg'%}
+    </div>
+    {% endif %}
+    </div>
+    <div class="col-span-6 flex flex-col justify-center {{ order }}">
+    {% if params.hTag and params.heading %}
+    <{{ params.hTag }} class="font-serif text-7xl mb-6">
+        {{ params.heading }}
+    </{{ params.hTag }}>
+    {% endif %}
+
+    {% if params.subheading %}
+    <span class="block mb-6 italic text-lg">
+        {{ params.subheading }}
+    </span>
+    {% endif %}
+
+    {% if params.copy %}
+    <p class="text-lg max-w-md">
+        {{ params.copy }}
+    </p>
+    {% endif %}
+    </div>
 </section>

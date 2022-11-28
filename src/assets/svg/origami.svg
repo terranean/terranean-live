@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="299" height="348" fill="none" viewBox="0 0 299 348">
+  <g class="animate-svg text-red">
+    <path stroke="currentColor" d="M9 2v288l83.5-185.691L9 2Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M59.01 6 9 290l114.476-168.746L59.011 6Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M107.502 19 9 290l141.974-146.302L107.502 19Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M153 41 9 290l165.159-118.648L153 41Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M194.123 69 9 290l186-82-.877-139Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M229.621 105 9 290l186-82 34.621-103Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M258.415 147 9 290l186-82 63.415-61Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M279.631 192 9 290l186-82 84.631-16Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M293.04 240.699 9.416 290 195 208l98.04 32.699Z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M297 290H9l186-82 102 82Z" class="animate-me no-repeat opacity-0"/>
+  </g>
+</svg>

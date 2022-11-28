@@ -6,7 +6,6 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/js/gsap.js");
     //  eleventyConfig.addPassthroughCopy("src/assets/images");
 
-    // https://www.npmjs.com/package/eleventy-plugin-svg-sprite
 
 
     return {

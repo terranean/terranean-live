@@ -4,12 +4,17 @@ title: Home
 tags: page
 ---
 
+{# {% from site.components import leftRightStack, simpleCTA %} #}
+{% from site.components import test %}
+{% from site.components import cta %}
 {% from site.components import leftRightStack %}
 {% set data = pages.index %}
 
 {# spacer #}
 <div class="h-16"></div>
 {# sections #}
-{{ leftRightStack( data.intro ) }}
 {{ leftRightStack( data.hero ) }}
+{{ leftRightStack( data.intro ) }}
+{{ leftRightStack( data.frontend ) }}
 {{ leftRightStack( data.backend ) }}
+{{ cta( data.cta ) }}

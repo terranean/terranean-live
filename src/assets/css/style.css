@@ -1,0 +1,6 @@
+.animate-me {
+    filter: brightness(50%);
+}
+.no-repeat {
+    filter: brightness(100%);
+}
