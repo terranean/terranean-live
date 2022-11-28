@@ -2,12 +2,19 @@
 https://www.trysmudford.com/blog/encapsulated-11ty-components/ 
 #}
 
-{% macro test(params) %}
-  {% include "../components/test/test.njk" %}
+
+{% macro leftRightStack(params) %}
+  {% include "../components/leftRightStack/leftRightStack.njk" %}
 {% endmacro %}
 {% macro cta(params) %}
   {% include "../components/cta/cta.njk" %}
 {% endmacro %}
-{% macro leftRightStack(params) %}
-  {% include "../components/leftRightStack/leftRightStack.njk" %}
+{% macro boxedHeading(params) %}
+  {% include "../components/boxedHeading/boxedHeading.njk" %}
+{% endmacro %}
+{% macro button(params) %}
+  {% include "../elements/button/button.njk" %}
+{% endmacro %}
+{% macro formContact(params) %}
+  {% include "../components/formContact/formContact.njk" %}
 {% endmacro %}

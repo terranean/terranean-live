@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora:ital@0;1&display=swap" rel="stylesheet"> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <title>{{ site.title }}{% if title %} - {{ title }} {% endif %} </title>
@@ -28,5 +28,6 @@
         {{ content | safe }}
     </main>
     <script src="{{ '/assets/js/gsap.js' | url }}"></script>
+    {% include "partials/_footer.njk" %}
   </body>
 </html>

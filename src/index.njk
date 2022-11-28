@@ -4,17 +4,27 @@ title: Home
 tags: page
 ---
 
-{# {% from site.components import leftRightStack, simpleCTA %} #}
-{% from site.components import test %}
-{% from site.components import cta %}
-{% from site.components import leftRightStack %}
+{% from site.components import leftRightStack, cta, boxedHeading, formContact %}
 {% set data = pages.index %}
 
 {# spacer #}
-<div class="h-16"></div>
+<div class="h-16 md:hidden"></div>
 {# sections #}
+<section>
 {{ leftRightStack( data.hero ) }}
+</section>
+<section>
+{{ boxedHeading( 'a partner that works <i>with</i> you' ) }}
 {{ leftRightStack( data.intro ) }}
+</section>
+<section>
+{{ boxedHeading( 'the tech that works <i>for</i> you' ) }}
 {{ leftRightStack( data.frontend ) }}
 {{ leftRightStack( data.backend ) }}
+</section>
+{# <section>
 {{ cta( data.cta ) }}
+</section> #}
+<section>
+    {{ formContact( ) }}
+</section>

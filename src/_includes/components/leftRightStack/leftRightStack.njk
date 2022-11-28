@@ -2,7 +2,7 @@
 {% set svgPath = '../../../assets/svg/' %}
 {# {% {{ set order = 'order-first' if params.orientation == 'copy-left' }} %} #}
 {# mobile #}
-<section class="md:hidden py-12">
+<div class="md:hidden py-12">
     {% if params.hTag and params.heading %}
     <{{ params.hTag }} class="font-serif text-4xl mb-6">
         {{ params.heading }}
@@ -26,34 +26,34 @@
         {{ params.copy }}
     </p>
     {% endif %}
-</section>
+</div>
 {# desktop #}
-{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% endif %}
-<section class="hidden md:grid grid-cols-12 gap-6 py-48 {{ order }}">
+{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% set spacer = 'col-start-2' %}{% endif %}
+<div class="hidden md:grid grid-cols-12 gap-6 py-48 {{ order }}">
     <div class="col-span-6 flex flex-col justify-center">
-    {% if params.svg %}
-    <div class="w-full flex flex-row justify-center">
-        {% include svgPath + params.svg + '.svg'%}
-    </div>
-    {% endif %}
-    </div>
-    <div class="col-span-6 flex flex-col justify-center {{ order }}">
-    {% if params.hTag and params.heading %}
-    <{{ params.hTag }} class="font-serif text-7xl mb-6">
-        {{ params.heading }}
-    </{{ params.hTag }}>
-    {% endif %}
+        {% if params.svg %}
+        <div class="w-full flex flex-row justify-center">
+            {% include svgPath + params.svg + '.svg'%}
+        </div>
+        {% endif %}
+        </div>
+        <div class="{{ spacer }} col-span-5 flex flex-col justify-center {{ order }}">
+        {% if params.hTag and params.heading %}
+        <{{ params.hTag }} class="font-serif text-7xl mb-6">
+            {{ params.heading }}
+        </{{ params.hTag }}>
+        {% endif %}
 
-    {% if params.subheading %}
-    <span class="block mb-6 italic text-lg">
-        {{ params.subheading }}
-    </span>
-    {% endif %}
+        {% if params.subheading %}
+        <span class="block mb-6 italic text-lg">
+            {{ params.subheading }}
+        </span>
+        {% endif %}
 
-    {% if params.copy %}
-    <p class="text-lg max-w-md">
-        {{ params.copy }}
-    </p>
-    {% endif %}
+        {% if params.copy %}
+        <p class="text-lg max-w-md">
+            {{ params.copy }}
+        </p>
+        {% endif %}
     </div>
-</section>
+</div>

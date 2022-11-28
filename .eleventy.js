@@ -5,7 +5,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addPassthroughCopy("src/assets/css/style.css");
     eleventyConfig.addPassthroughCopy("src/assets/js/gsap.js");
     //  eleventyConfig.addPassthroughCopy("src/assets/images");
-
+    eleventyConfig.addNunjucksShortcode("year", () => `${new Date().getFullYear()}`);
 
 
     return {
