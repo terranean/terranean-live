@@ -22,6 +22,9 @@ module.exports = {
         'sans'    : ['"Epilogue"', 'sans-serif'],
         'serif'   : ['"Lora"', 'serif'],
       },
+      lineHeight: {
+        'custom': '1.15',
+      },
       transitionDelay: {
         '0' : '0ms',
         '1' : time * 1 + 'ms',

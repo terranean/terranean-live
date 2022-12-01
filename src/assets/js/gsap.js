@@ -1,7 +1,7 @@
 console.log('gsap');
 
 const duration = .15;
-const delayBase = .1;
+const delayBase = .115;
 
 let children;
 let count = 0;
@@ -52,3 +52,10 @@ svgs.forEach((svg) => {
     });
 
 })
+
+// header contact button
+ScrollTrigger.create({
+    trigger: "#formContact",
+    start: "top 65%",
+    toggleClass: {targets: "#btnContact", className: "opacity-0"}
+  });

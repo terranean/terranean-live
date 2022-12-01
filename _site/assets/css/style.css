@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .animate-me {
     filter: brightness(50%);
 }

@@ -1,7 +1,7 @@
 console.log('gsap');
 
 const duration = .15;
-const delayBase = .1;
+const delayBase = .125;
 
 let children;
 let count = 0;

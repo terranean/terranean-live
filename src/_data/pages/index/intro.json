@@ -1,8 +1,8 @@
 {
     "orientation": "copy-left",
-    "hTag": "h2",
-    "heading": "all encompassing",
-    "subheading": "intro subheading",
-    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "hTag": "h3",
+    "heading": "everything in its right place",
+    "subheading": "collaboration, communication, compassion",
+    "copy": "Building the perfect website shouldn't be hard. We uncover your needs and incorporate them with great care.<br><br>Here, on Earth, together.",
     "svg": "earth"
 }

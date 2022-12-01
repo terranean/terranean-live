@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
 .animate-me {
-    filter: brightness(50%);
+    /* filter: brightness(.5); */
+    stroke-opacity: 30%;
 }
 .no-repeat {
-    filter: brightness(100%);
+    /* filter: brightness(1); */
+    stroke-opacity: 100%;
 }
 .div-shadow:after {
     content: '';

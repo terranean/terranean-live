@@ -3,5 +3,6 @@
     "description": "custom website development",
     "keywords": "eleventy, 11ty, css, ssg",
     "components": "./_includes/system/macros.njk",
-    "pages": "./src/_data/pages/"
+    "pages": "./src/_data/pages/",
+    "assets": "./assets/"
   }

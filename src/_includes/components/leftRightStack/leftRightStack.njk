@@ -22,24 +22,30 @@
     {% endif %}
 
     {% if params.copy %}
-    <p>
-        {{ params.copy }}
+    <p class="max-w-md">
+        {{ params.copy | safe }}
     </p>
     {% endif %}
 </div>
 {# desktop #}
-{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% set spacer = 'col-start-2' %}{% endif %}
-<div class="hidden md:grid grid-cols-12 gap-6 py-48 {{ order }}">
-    <div class="col-span-6 flex flex-col justify-center">
+{# copy-right:
+    svg: start-2 span-5
+    copy: span-5
+    top-left:
+    correct
+ #}
+{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% set copySpacer = 'col-start-2' %}{% else %}{% set svgSpacer = 'col-start-2' %}{% endif %}
+<div class="hidden md:grid grid-cols-12 gap-6 py-24 {{ order }}">
+    <div class="{{ svgSpacer }} col-span-5 flex flex-col justify-center">
         {% if params.svg %}
         <div class="w-full flex flex-row justify-center">
             {% include svgPath + params.svg + '.svg'%}
         </div>
         {% endif %}
         </div>
-        <div class="{{ spacer }} col-span-5 flex flex-col justify-center {{ order }}">
+        <div class="{{ copySpacer }} col-span-5 flex flex-col justify-center {{ order }}">
         {% if params.hTag and params.heading %}
-        <{{ params.hTag }} class="font-serif text-7xl mb-6">
+        <{{ params.hTag }} class="font-serif text-4xl lg:text-7xl lg:leading-custom mb-6">
             {{ params.heading }}
         </{{ params.hTag }}>
         {% endif %}
@@ -52,7 +58,7 @@
 
         {% if params.copy %}
         <p class="text-lg max-w-md">
-            {{ params.copy }}
+            {{ params.copy | safe}}
         </p>
         {% endif %}
     </div>

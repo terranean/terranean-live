@@ -6,10 +6,10 @@
   "scripts": {
     "start": "npm-run-all -p dev:*",
     "build": "run-s build:*",
+    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind-purged.css --watch --postcss",
     "dev:11ty": "eleventy --serve",
-    "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --watch --postcss",
-    "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o _site/assets/css/tailwind.css --postcss"
+    "build:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/tailwind-purged.css --postcss",
+    "build:11ty": "eleventy"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +18,14 @@
     "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^10.4.13",
     "cssnano": "^5.1.14",
+    "eleventy-plugin-gen-favicons": "^1.1.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.19",
     "tailwindcss": "^3.2.4"
+  },
+  "dependencies": {
+    "clean-css": "^5.3.1",
+    "html-minifier": "^4.0.0",
+    "terser": "^5.16.0"
   }
 }
