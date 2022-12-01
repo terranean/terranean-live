@@ -1,7 +1,8 @@
-{# params: heading, subheading, cop, svg #}
+{# params: heading, subheading, copy, svg #}
 {% set svgPath = '../../../assets/svg/' %}
+{# {% {{ set order = 'order-first' if params.orientation == 'copy-left' }} %} #}
 {# mobile #}
-<section class="md:hidden py-12">
+<div class="md:hidden py-12">
     {% if params.hTag and params.heading %}
     <{{ params.hTag }} class="font-serif text-4xl mb-6">
         {{ params.heading }}
@@ -15,18 +16,65 @@
     {% endif %}
 
     {% if params.subheading %}
-    <span class="italic">
+    <span class="block mb-6 italic">
         {{ params.subheading }}
     </span>
     {% endif %}
 
     {% if params.copy %}
-    <p>
-        {{ params.copy }}
+    <p class="max-w-md">
+        {{ params.copy | safe }}
     </p>
     {% endif %}
-</section>
+    {% if params.cta %}
+    <p class="max-w-md mt-8 border-b inline-block px-2 pt-1 hover:border-none">
+        <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
+            {{ params.cta.text | safe }}
+        </a>
+    </p>
+    {% endif %}
+</div>
 {# desktop #}
-<section class="hidden md:grid">
-desktop
-</section>
+{# copy-right:
+    svg: start-2 span-5
+    copy: span-5
+    top-left:
+    correct
+ #}
+{% if params.orientation == 'copy-left' %}{% set order = 'order-first' %}{% set copySpacer = 'col-start-2' %}{% else %}{% set svgSpacer = 'col-start-2' %}{% endif %}
+<div class="hidden md:grid grid-cols-12 gap-6 py-24 {{ order }}">
+    <div class="{{ svgSpacer }} col-span-5 flex flex-col justify-center">
+        {% if params.svg %}
+        <div class="w-full flex flex-row justify-center">
+            {% include svgPath + params.svg + '.svg'%}
+        </div>
+        {% endif %}
+        </div>
+        <div class="{{ copySpacer }} col-span-5 flex flex-col justify-center {{ order }}">
+        {% if params.hTag and params.heading %}
+        <{{ params.hTag }} class="font-serif text-4xl lg:text-7xl lg:leading-custom mb-6">
+            {{ params.heading }}
+        </{{ params.hTag }}>
+        {% endif %}
+
+        {% if params.subheading %}
+        <span class="block mb-6 italic text-lg">
+            {{ params.subheading }}
+        </span>
+        {% endif %}
+
+        {% if params.copy %}
+        <p class="text-lg max-w-md">
+            {{ params.copy | safe}}
+        </p>
+        {% endif %}
+
+        {% if params.cta %}
+        <div class="max-w-md mt-8 border-b border-x-gray border-t-gray hover:border-b-gray px-2 pt-1 w-fit ">
+            <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
+                {{ params.cta.text | safe }}
+            </a>
+        </div>
+        {% endif %}
+    </div>
+</div>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="187" fill="none" viewBox="0 0 288 187">
+  <g class="animate-svg text-blue">
+    <line x1="288" y1=".5" y2=".5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+    <line x1="288" y1="6.5" y2="6.5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+    <line x1="288" y1="12.5" y2="12.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="18.5" y2="18.5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+    <line x1="288" y1="24.5" y2="24.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="30.5" y2="30.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="36.5" y2="36.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="42.5" y2="42.5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+    <line x1="288" y1="48.5" y2="48.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="54.5" y2="54.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="60.5" y2="60.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="66.5" y2="66.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="72.5" y2="72.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="78.5" y2="78.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="84.5" y2="84.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="90.5" y2="90.5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+    <line x1="288" y1="96.5" y2="96.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="102.5" y2="102.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="108.5" y2="108.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="114.5" y2="114.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="120.5" y2="120.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="126.5" y2="126.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="132.5" y2="132.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="138.5" y2="138.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="144.5" y2="144.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="150.5" y2="150.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="156.5" y2="156.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="162.5" y2="162.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="168.5" y2="168.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="174.5" y2="174.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="180.5" y2="180.5" stroke="currentColor" class="animate-me opacity-0"/>
+    <line x1="288" y1="186.5" y2="186.5" stroke="currentColor" class="animate-me no-repeat opacity-0"/>
+  </g>
+</svg>

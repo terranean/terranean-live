@@ -1,0 +1,21 @@
+<div class="md:grid grid-cols-12 gap-6 py-24" id="formContact">
+    <form name="contact" method="POST" data-netlify="true" class="col-start-4 col-end-10 border border-white p-6 bg-gray">
+        <h2 class="font-serif text-4xl max-w-[300px] mt-6 mb-12">
+            introduce yourself
+        </h2>
+        <p class="mb-4">
+            <label class="font-serif">name<br><input class="bg-transparent border border-white w-full font-sans pl-1" type="text" name="name" required /></label>
+        </p>
+        <p class="mb-4">
+            <label class="font-serif">email<br><input class="bg-transparent border border-white w-full font-sans pl-1" type="email" name="email" required /></label>
+        </p>
+        <p class="mb-4">
+            <label class="font-serif">message<br><textarea class="bg-transparent border border-white w-full font-sans pl-1" name="message" required ></textarea></label>
+        </p>
+        <p class="flex flex-row justify-end mr-2 mt-3 relative z-10">
+            <button class="bg-white text-gray p-4 font-serif relative btn-shadow border border-white" type="submit">
+                send
+            </button>
+        </p>
+    </form>
+</div>

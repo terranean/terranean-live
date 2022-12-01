@@ -1,0 +1,8 @@
+{
+    "orientation": "copy-left",
+    "hTag": "h3",
+    "heading": "the right stack",
+    "subheading": "how do we maintain it?",
+    "copy": "Are you concerned with how your team manages incoming data? Do you need to build, publish, and update content easily and efficiently? This is where a properly configured Content Management System comes in, and we can help with that.<br><br>Your data and business logic is just as important as what your guests see on their screens. Tracking conversions and organizing your leads into an efficient pipeline can be daunting, but it doesn't have to be. Whether you need a robust Wordpress setup or a static Jamstack site, we make sure the stack works for you.",
+    "svg": "atmosphere"
+}

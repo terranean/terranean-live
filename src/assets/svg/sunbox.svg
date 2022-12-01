@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="288" height="288" fill="none" viewBox="0 0 288 288">
+  <g class="animate-svg text-yellow">
+    <path stroke="currentColor" d="M179.5 108.5v71h-71v-71z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m170.397 82.228 35.375 88.168-88.168 35.375-35.375-88.168z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m155.514 60.645 71.841 94.867-94.867 71.842-71.841-94.868z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m137.149 43.116 107.735 94.033-94.033 107.735L43.116 150.85z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m116.557 29.146 142.296 87.411-87.41 142.297-142.297-87.412z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m94.574 18.312 175.115 76.262-76.262 175.115-175.115-76.262z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m71.667 10.282 206.05 61.387-61.387 206.05-206.05-61.387z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m48.194 4.781 235.024 43.415-43.415 235.024L4.779 239.805z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="m24.422 1.572 262.006 22.849-22.85 262.005L1.574 263.578z" class="animate-me opacity-0"/>
+    <path stroke="currentColor" d="M.5.5h287v287H.5z" class="animate-me no-repeat opacity-0"/>
+  </g>
+</svg>
