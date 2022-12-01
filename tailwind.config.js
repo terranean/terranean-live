@@ -16,7 +16,7 @@ module.exports = {
         'purple'  : "#CD76EC",
         'blue'    : "#50C3F4",
         'yellow'  : "#E3C351",
-        'green'   : "#55BD23"
+        'green'   : "#A1EB44"
       },
       fontFamily: {
         'sans'    : ['"Epilogue"', 'sans-serif'],
