@@ -3,6 +3,10 @@
     "hTag": "h3",
     "heading": "everything in its right place",
     "subheading": "collaboration, communication, compassion",
-    "copy": "Building the perfect website shouldn't be hard. We uncover your needs and incorporate them with great care.<br><br>Here, on Earth, together.",
+    "copy": "Building your perfect website shouldn't be hard. All you need is a partner that will uncover your needs and incorporate them into their work with care.<br><br><span id='iconHand'></span> Oh, hi! That's us.<br><br>We work with you to understand your goals and build a platform that empowers you to exceed them. ",
+    "cta": {
+        "text": "<i>Let's collaborate</i> <span id='iconArrowDown'></span>",
+        "url": "#formContact"
+    },
     "svg": "earth"
 }

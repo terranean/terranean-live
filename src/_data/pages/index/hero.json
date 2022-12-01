@@ -2,9 +2,9 @@
     "orientation": "copy-right",
     "hTag": "h1",
     "heading": "above ground",
-    "copy": "An honest and open studio specializing in website development and design.",
+    "copy": "<i>terranean</i> is an honest and open studio specializing in website development.",
     "cta": {
-        "text": "Start building",
+        "text": "<i>Start building</i> <span id='iconArrowDown'></span>",
         "url": "#formContact"
     },
     "svg": "origami"
