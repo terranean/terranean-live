@@ -27,7 +27,7 @@
     </p>
     {% endif %}
     {% if params.cta %}
-    <p class="max-w-md mt-8 border-b inline-block px-2 pt-1 hover:border-none">
+    <p class="max-w-md mt-8 border-b inline-block px-1 hover:border-none">
         <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
             {{ params.cta.text | safe }}
         </a>
@@ -70,7 +70,7 @@
         {% endif %}
 
         {% if params.cta %}
-        <div class="max-w-md mt-8 border-b border-x-gray border-t-gray hover:border-b-gray px-2 pt-1 w-fit ">
+        <div class="max-w-md mt-8 border-b border-x-gray border-t-gray hover:border-b-gray px-1 w-fit ">
             <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
                 {{ params.cta.text | safe }}
             </a>
