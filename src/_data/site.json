@@ -1,7 +1,7 @@
 {
     "title": "terranean",
-    "description": "custom website development",
-    "keywords": "eleventy, 11ty, css, ssg",
+    "description": "Indianapolis-based studio specializing in custom WordPress and Jamstack website development",
+    "keywords": "web dev, web development, wordpress, jamstack, indianapolis",
     "components": "./_includes/system/macros.njk",
     "pages": "./src/_data/pages/",
     "assets": "./assets/"
