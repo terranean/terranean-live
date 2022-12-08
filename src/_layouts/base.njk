@@ -10,11 +10,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora:ital@0;1&display=swap" rel="stylesheet"> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     {% favicons 'src/assets/svg/favicon.svg' %}
-    <title>{{ site.title }}</title>
-    <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}"/>
+    {# <title>{{ site.title }}</title>
+    <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}"/> #}
+    <!-- Primary Meta Tags -->
+    <title>terranean</title>
+    <meta name="title" content="terranean">
+    <meta name="description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terranean.dev/">
+    <meta property="og:title" content="terranean">
+    <meta property="og:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="og:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://terranean.dev/">
+    <meta property="twitter:title" content="terranean">
+    <meta property="twitter:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
 
     <!-- capture the CSS content as a Nunjucks variable -->
     {% set css %}
@@ -33,6 +50,8 @@
         {{ content | safe }}
     </main>
     {# <script src="{{ '/assets/js/gsap.js' | url }}"></script> #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <!-- capture the JS content as a Nunjucks variable -->
     {% set js %}
         {% include "src/assets/js/gsap.js" %}
