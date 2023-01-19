@@ -1,0 +1,18 @@
+{# props: heading, subheading, linkText, url #}
+<div class="md:grid grid-cols-12 gap-6 py-48">
+    <div class="col-start-4 col-end-10 border border-white p-12">
+        <button><h2>{{ params.client }}</h2></button>
+        <div>
+            <ul>
+                {% set items = params.list %}
+                {# {{ items.one.title }} #}
+                {%- for title, desc in params.list -%}
+                <li>
+                    <h3>{{ title }}</h3>
+                    <p>{{ desc }}</p>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+</div>

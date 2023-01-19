@@ -1,0 +1,16 @@
+---
+layout: base
+title: Home
+tags: page
+---
+
+{% from site.components import clientList %}
+{% set data = pages.portfolio %}
+
+{# spacer #}
+<div class="h-16 md:hidden"></div>
+{# sections #}
+
+<section>
+{{ clientList( data.baseHQ ) }}
+</section>
