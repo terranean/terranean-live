@@ -1,15 +1,29 @@
-{# props: heading, subheading, linkText, url #}
-<div class="md:grid grid-cols-12 gap-6 py-48">
+{# params: client, job, list, url #}
+<div class="md:grid grid-cols-12 gap-6 py-4 test">
     <div class="col-start-4 col-end-10 border border-white p-12">
-        <button><h2>{{ params.client }}</h2></button>
-        <div>
+        <style>
+            .icon.closed {
+            content: '\02795'; 
+            }
+
+            {# .icon {
+            content: "\2796"; /* Unicode character for "minus" sign (-) */ #}
+            }
+        </style>
+        <button class="font-serif text-4xl accordion w-full transition-all flex flex-row justify-between"><h2 class="w-full text-left">{{ params.client }}</h2><div class="icon closed">+</div><div class="icon open hidden">-</div></button>
+        <div class="panel overflow-hidden max-h-0 transition-all duration-500 ease-in">
+            <div class="mt-10 border-b border-x-gray border-t-gray hover:border-b-gray px-1 w-fit italic">
+                <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
+                {{ params.cta.text | safe }}
+                </a>
+            </div>
             <ul>
                 {% set items = params.list %}
                 {# {{ items.one.title }} #}
                 {%- for title, desc in params.list -%}
                 <li>
-                    <h3>{{ title }}</h3>
-                    <p>{{ desc }}</p>
+                    <h3 class="mt-6 italic text-lg">{{ title }}</h3>
+                    <p class="text-base">{{ desc }}</p>
                 </li>
                 {%- endfor -%}
             </ul>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {# <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> #}
+    {# <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}"> #}
+    {# <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora:ital@0;1&display=swap" rel="stylesheet"> 
+    {% favicons 'src/assets/svg/favicon.svg' %}
+    {# <title>{{ site.title }}</title>
+    <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}"/> #}
+    <!-- Primary Meta Tags -->
+    <title>terranean</title>
+    <meta name="title" content="terranean">
+    <meta name="description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terranean.dev/">
+    <meta property="og:title" content="terranean">
+    <meta property="og:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="og:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://terranean.dev/">
+    <meta property="twitter:title" content="terranean">
+    <meta property="twitter:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
+
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+      {% include "src/assets/css/tailwind-purged.css" %}
+      {% include "src/assets/css/style.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+
+  </head>
+  <body class="px-6 max-w-7xl m-auto font-sans text-lg bg-gray text-white">
+  {% include "partials/_header.njk" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}
+        {% include "src/assets/js/accordion.js" %}
+    {% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    {% include "partials/_footer.njk" %}
+  </body>
+</html>
