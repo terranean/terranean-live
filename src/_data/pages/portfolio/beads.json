@@ -1,0 +1,14 @@
+{
+    "client": "Beads by Dre",
+    "job": "website launch support",
+    "list": {
+        "what is it?": "Squarespace e-commerce site setup for a friend.",
+        "tech": "Just a Squarespace theme with some custom CSS.",
+        "workflow": "Squarespace.",
+        "notes": "Is it still considered pro bono if they dropped a case of High Life on my porch? <br><br>*potentially on hiatus*"
+    },
+    "cta": {
+        "url": "https://beadsbydre.com",
+        "text": "https://beadsbydre.com <span id='iconArrowOut'></span>"
+    }
+}

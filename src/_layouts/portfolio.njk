@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {# <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> #}
+    {# <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}"> #}
+    {# <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}"> #}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,200;1,200&family=Lora:ital@0;1&display=swap" rel="stylesheet"> 
+    {% favicons 'src/assets/svg/favicon.svg' %}
+    {# <title>{{ site.title }}</title>
+    <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}"/> #}
+    <!-- Primary Meta Tags -->
+    <title>portfolio of work</title>
+    <meta name="title" content="portfolio of work">
+    <meta name="description" content="Jesse's portfolio">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://terranean.dev/portfolio-of-work">
+    <meta property="og:title" content="terranean">
+    <meta property="og:description" content="Jesse's portfolio">
+    <meta property="og:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://terranean.dev/portfolio-of-work">
+    <meta property="twitter:title" content="terranean">
+    <meta property="twitter:description" content="Jesse's portfolio">
+    <meta property="twitter:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
+
+
+    <!-- capture the CSS content as a Nunjucks variable -->
+    {% set css %}
+      {% include "src/assets/css/tailwind-purged.css" %}
+      {% include "src/assets/css/style.css" %}
+    {% endset %}
+    <!-- feed it through our cssmin filter to minify -->
+    <style>
+      {{ css | cssmin | safe }}
+    </style>
+
+  </head>
+  <body class="px-6 max-w-7xl m-auto font-sans text-lg bg-gray text-white">
+    <div class="w-full flex flex-row items-center justify-around py-5 sticky top-0 z-50 pr-2">
+      <span class="italic">
+          jesse's portfolio of work
+      </span>
+    </div>
+    <main>
+        {{ content | safe }}
+    </main>
+    <!-- capture the JS content as a Nunjucks variable -->
+    {% set js %}
+        {% include "src/assets/js/accordion.js" %}
+    {% endset %}
+    <!-- feed it through our jsmin filter to minify -->
+    <script>
+      {{ js | jsmin | safe }}
+    </script>
+    <footer class="w-full text-base md:grid grid-cols-12 gap-6 mb-6">
+      <div class="col-start-4 col-end-7 mt-6">
+          <span>
+              © {% year %} <i>terranean</i><br>Indianapolis, IN, Midwest, USA
+          </span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+    "client": "terranean",
+    "job": "new website build",
+    "list": {
+        "what is it?": "My freelance one-pager.",
+        "tech": "Custom 11ty theme (Nunjucks) from scratch with TailwindCSS and GSAP for custom animations. Minified and served as a single static 37kb file (fonts and GSAP loaded via CDN).",
+        "workflow": "Netlify, GitHub.",
+        "notes": "100% my brainchild. Brand, design, animation, and build by me."
+    },
+    "cta": {
+        "url": "https://terranean.dev",
+        "text": "https://terranean.dev <span id='iconArrowOut'></span>"
+    }
+}

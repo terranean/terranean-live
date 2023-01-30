@@ -1,0 +1,14 @@
+{
+    "client": "Your Money Line",
+    "job": "new website build",
+    "list": {
+        "what is it?": "A new website to activate Your Money Line's new branding.",
+        "tech": "Custom WordPress theme (PHP) using Advanced Custom Fields, Tailwind + Sass CSS, and custom animation work using GSAP.",
+        "workflow": "Local by Flywheel, WP Engine, GitHub.",
+        "notes": "Although this engagement took place during my time within an agency, I was the sole developer from start to finish."
+    },
+    "cta": {
+        "url": "https://yourmoneyline.com",
+        "text": "https://yourmoneyline.com <span id='iconArrowOut'></span>"
+    }
+}

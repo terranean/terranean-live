@@ -1,0 +1,28 @@
+---
+layout: portfolio
+title: Work
+tags: page
+---
+
+{% from site.components import clientList %}
+{% set data = pages.portfolio %}
+
+{# spacer #}
+<div class="h-16 md:hidden"></div>
+{# sections #}
+
+<section>
+{{ clientList( data.terranean ) }}
+</section>
+<section>
+{{ clientList( data.baseHQ ) }}
+</section>
+<section>
+{{ clientList( data.authenticx ) }}
+</section>
+<section>
+{{ clientList( data.yourMoneyLine ) }}
+</section>
+<section>
+{{ clientList( data.beads ) }}
+</section>

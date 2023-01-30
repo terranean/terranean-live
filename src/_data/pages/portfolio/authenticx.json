@@ -1,0 +1,14 @@
+{
+    "client": "Authenticx",
+    "job": "website refresh and support",
+    "list": {
+        "what is it?": "Started as a website update + refresh. I adapted many existing static sections into ACF Blocks in addition to building completely new ones. I now provide ongoing maintenance and support.",
+        "tech": "Custom WordPress theme (PHP) using Advanced Custom Fields.",
+        "workflow": "Local by Flywheel, WP Engine, GitHub.",
+        "notes": "Although this engagement took place during my time within an agency, I was the sole developer on the refresh and have continued to support them as a freelancer."
+    },
+    "cta": {
+        "url": "https://authenticx.com",
+        "text": "https://authenticx.com <span id='iconArrowOut'></span>"
+    }
+}

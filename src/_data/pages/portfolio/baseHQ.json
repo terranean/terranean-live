@@ -1,0 +1,14 @@
+{
+    "client": "Base HQ",
+    "job": "new website build",
+    "list": {
+        "what is it?": "A reconciliation of two separate websites necessitated by a merger. 100% custom WordPress theme based on a new brand refresh design system.",
+        "tech": "Custom WordPress theme (PHP) using Advanced Custom Fields, Tailwind + Sass CSS, and AlpineJS.",
+        "workflow": "Local by Flywheel, WP Engine, GitHub.",
+        "notes": "Although this engagement took place during my time within an agency, I was the sole developer from start to finish."
+    },
+    "cta": {
+        "url": "https://basehq.com",
+        "text": "https://basehq.com <span id='iconArrowOut'></span>"
+    }
+}
