@@ -1,14 +1,14 @@
 {
-    "client": "terranean*",
+    "client": "terranean",
     "job": "new website build",
     "list": {
-        "what is it?": "A reconciliation of two separate websites necessitated by a merger. 100% custom WordPress theme based on a new brand refresh design system.",
-        "tech": "Custom WordPress theme (PHP) using Advanced Custom Fields, Tailwind + Sass CSS, and AlpineJS.",
-        "workflow": "Local by Flywheel, WP Engine, GitHub.",
-        "notes": "Although this engagement took place at my time within an agency, I was the sole developer from start to finish."
+        "what is it?": "My freelance one-pager.",
+        "tech": "Custom 11ty theme (Nunjucks) from scratch with TailwindCSS and GSAP for custom animations. Minified and served as a single static 37kb file (fonts and GSAP loaded via CDN).",
+        "workflow": "Netlify, GitHub.",
+        "notes": "100% my brainchild. Brand, design, animation, and build by me."
     },
     "cta": {
-        "url": "https://basehq.com",
-        "text": "https://basehq.com <span id='iconArrowOut'></span>"
+        "url": "https://terranean.dev",
+        "text": "https://terranean.dev <span id='iconArrowOut'></span>"
     }
 }

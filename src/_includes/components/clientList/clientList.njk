@@ -1,19 +1,16 @@
 {# params: client, job, list, url #}
 <div class="md:grid grid-cols-12 gap-6 py-4 test">
-    <div class="col-start-4 col-end-10 border border-white p-12">
-        <style>
-            .icon.closed {
-            content: '\02795'; 
-            }
-
-            {# .icon {
-            content: "\2796"; /* Unicode character for "minus" sign (-) */ #}
-            }
-        </style>
-        <button class="font-serif text-4xl accordion w-full transition-all flex flex-row justify-between"><h2 class="w-full text-left">{{ params.client }}</h2><div class="icon closed">+</div><div class="icon open hidden">-</div></button>
+    <div class="col-start-4 col-end-10 border border-white p-6 md:p-12">
+        <button class="font-serif text-4xl accordion w-full transition-all flex flex-row justify-between">
+            <h2 class="w-full text-left">{{ params.client }}</h2>
+            <div class="flex flex-col justify-center">
+                <div class="icon closed">+</div>
+                <div class="icon open hidden">-</div>
+            </div>
+        </button>
         <div class="panel overflow-hidden max-h-0 transition-all duration-500 ease-in">
             <div class="mt-10 border-b border-x-gray border-t-gray hover:border-b-gray px-1 w-fit italic">
-                <a href="{{ params.cta.url }}" target="{{ params.cta.target }}">
+                <a href="{{ params.cta.url }}" target="_blank">
                 {{ params.cta.text | safe }}
                 </a>
             </div>
@@ -23,7 +20,7 @@
                 {%- for title, desc in params.list -%}
                 <li>
                     <h3 class="mt-6 italic text-lg">{{ title }}</h3>
-                    <p class="text-base">{{ desc }}</p>
+                    <p class="text-sm md:text-base">{{ desc | safe }}</p>
                 </li>
                 {%- endfor -%}
             </ul>

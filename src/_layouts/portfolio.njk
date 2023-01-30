@@ -14,22 +14,22 @@
     {# <title>{{ site.title }}</title>
     <meta name="description" content="{% if description %}{{description}}{% else %}{{site.description}}{% endif %}"/> #}
     <!-- Primary Meta Tags -->
-    <title>terranean</title>
-    <meta name="title" content="terranean">
-    <meta name="description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <title>portfolio of work</title>
+    <meta name="title" content="portfolio of work">
+    <meta name="description" content="Jesse's portfolio">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://terranean.dev/">
+    <meta property="og:url" content="https://terranean.dev/portfolio-of-work">
     <meta property="og:title" content="terranean">
-    <meta property="og:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="og:description" content="Jesse's portfolio">
     <meta property="og:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://terranean.dev/">
+    <meta property="twitter:url" content="https://terranean.dev/portfolio-of-work">
     <meta property="twitter:title" content="terranean">
-    <meta property="twitter:description" content="Indianapolis-based studio specializing in custom WordPress and Jamstack website development">
+    <meta property="twitter:description" content="Jesse's portfolio">
     <meta property="twitter:image" content="https://res.cloudinary.com/dewcjn7ml/image/upload/v1670519088/terranean-open-graph_wizhnb.png">
 
 
@@ -45,7 +45,11 @@
 
   </head>
   <body class="px-6 max-w-7xl m-auto font-sans text-lg bg-gray text-white">
-  {% include "partials/_header.njk" %}
+    <div class="w-full flex flex-row items-center justify-around py-5 sticky top-0 z-50 pr-2">
+      <span class="italic">
+          jesse's portfolio of work
+      </span>
+    </div>
     <main>
         {{ content | safe }}
     </main>
@@ -57,6 +61,12 @@
     <script>
       {{ js | jsmin | safe }}
     </script>
-    {% include "partials/_footer.njk" %}
+    <footer class="w-full text-base md:grid grid-cols-12 gap-6 mb-6">
+      <div class="col-start-4 col-end-7 mt-6">
+          <span>
+              © {% year %} <i>terranean</i><br>Indianapolis, IN, Midwest, USA
+          </span>
+      </div>
+    </footer>
   </body>
 </html>
