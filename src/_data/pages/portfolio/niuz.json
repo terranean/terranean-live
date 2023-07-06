@@ -1,0 +1,14 @@
+{
+    "client": "niuz",
+    "job": "new website build",
+    "list": {
+        "what is it?": "Completely new website build.",
+        "tech": "WordPress with Divi.",
+        "workflow": "Local by Flywheel, Plesk.",
+        "notes": "New website build based on provided Figma design files."
+    },
+    "cta": {
+        "url": "https://niuz.com",
+        "text": "https://niuz.com <span id='iconArrowOut'></span>"
+    }
+}
