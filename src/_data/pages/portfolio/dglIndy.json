@@ -1,0 +1,14 @@
+{
+    "client": "DGL Indy",
+    "job": "new website build",
+    "list": {
+        "what is it?": "Completely new website design and build.",
+        "tech": "Figma + WordPress with Divi.",
+        "workflow": "Local by Flywheel, Plesk.",
+        "notes": "New website designed and built by me. Client provided an existing logo, and I took it from there."
+    },
+    "cta": {
+        "url": "https://dglindy.com",
+        "text": "https://dglindy.com <span id='iconArrowOut'></span>"
+    }
+}
