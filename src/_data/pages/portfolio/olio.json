@@ -1,0 +1,14 @@
+{
+    "client": "Olio",
+    "job": "new website build",
+    "list": {
+        "what is it?": "Completely new website design and build.",
+        "tech": "WordPress with Divi.",
+        "workflow": "Local by Flywheel, WP Engine.",
+        "notes": "New website co-designed and built by me. Client provided an existing style guide and logo, I designed the first draft of the site and then re-worked with their talented in-house designer before launch."
+    },
+    "cta": {
+        "url": "https://olio.health",
+        "text": "https://olio.health <span id='iconArrowOut'></span>"
+    }
+}
