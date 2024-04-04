@@ -1,0 +1,14 @@
+{
+    "client": "Growth Heroes",
+    "job": "new website build",
+    "list": {
+        "what is it?": "Completely new website build.",
+        "tech": "WordPress with Elementor.",
+        "workflow": "Local by Flywheel, WP Engine.",
+        "notes": "New website build based on provided Figma design files. I also provide ongoing maintenance and support for Growth Heroes' many client sites."
+    },
+    "cta": {
+        "url": "https://growthheroes.com",
+        "text": "https://growthheroes.com <span id='iconArrowOut'></span>"
+    }
+}
