@@ -1,0 +1,14 @@
+{
+    "client": "317 Plumber",
+    "job": "new website build",
+    "list": {
+        "what is it?": "Completely new website design and build.",
+        "tech": "Figma + WordPress with Divi.",
+        "workflow": "Local by Flywheel, WP Engine, GitHub.",
+        "notes": "New website designed and built by me. Client provided a logo, some existing copy from their previous site, and I took it from there."
+    },
+    "cta": {
+        "url": "https://317plumber.com",
+        "text": "https://317plumber.com <span id='iconArrowOut'></span>"
+    }
+}
